@@ -23,3 +23,11 @@
     font-family: 'CustomFont', monospace;
     src: url(./LibreFranklin-VariableFont_wght.ttf) format('ttf');
 }
+
+body {
+    background-image: linear-gradient(var(--background-colour-topg),var(--background-colour-bottomg),var(--background-colour-topg));
+    background-size: cover;
+    margin: 0;
+    font-family: 'CustomFont', monospace;
+    font-size: 20px;
+}
