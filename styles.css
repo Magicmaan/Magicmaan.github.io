@@ -7,16 +7,14 @@
     --header-background-colour-topg: #2A2D35;
     
     
-    --background-colour-topg: #10101a;
-    --background-colour-bottomg: #202031;
-    --background-colour-accent: #2c3147;
+    --background-colour: #1a2421;
+    --background-colour-accent: #ffffff;
     --background-colour-border: #20242c;
 
-    --image-size: 500px;
-    --image-outline: #12121d;
-    --image-tint: #ff0000;
+    
 
-    --textbox-colour: #adb5b6;
+    --text-colour: #eaf2f3;
+    --text-colour-shadow: #0d1311;
 }
 
 @font-face {
@@ -24,10 +22,3 @@
     src: url(./LibreFranklin-VariableFont_wght.ttf) format('ttf');
 }
 
-body {
-    background-image: linear-gradient(var(--background-colour-topg),var(--background-colour-bottomg),var(--background-colour-topg));
-    background-size: cover;
-    margin: 0;
-    font-family: 'CustomFont', monospace;
-    font-size: 20px;
-}

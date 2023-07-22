@@ -7,23 +7,97 @@
     html, body {
       height: 100%; /* Set the body and html elements to occupy full height */
     }
+
+
+
+    body {
+      background-color: var(--background-colour);
+      background-size: cover;
+      margin: 0;
+      
+    }
     
-    .Name {
-      text-align: centre;
+    * {
+      font-family: Arial;
+      color: var(--text-colour);
+      text-decoration: none;
+    }
+
+
+    #header-container {
+      background-color: var(--background-colour);
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      height: 50px;
+      position: sticky;
+      top: 0;
+      overflow: hidden;
+      background-color: red;
+
+      box-shadow: 0 0 8px var(--background-colour-accent);
+    } 
+
+    
+    #header {
+      display: flex; /* Use flexbox to create a horizontal layout */
+      justify-content: center; /* Center the items horizontally */
+      
+      width: 100%; 
+      background-color:rgb(255, 0, 0);
+    }
+
+    .header-link {
+      padding: 20px 20px;
+      position: relative;
+      align-items: center;
+      display: flex;
+
+      font-size: 30px;
+      color: rgb(38, 0, 255);
+      font-weight: bold;
+
+    }
+
+    .header-link:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 2px; /* Width of the white line */
+      height: 70%; /* Height of the white line */
+      background-color: white; /* Color of the white line */
+    }
+
+    #Name {
+      font-size: 50px;
+      color: var(--text-colour);
+      text-align: center;
+      font-weight: bold;
+      text-shadow: -4px 4px 1px var(--text-colour-shadow);
     }
 
   </style>
 </head>
 
 <body>
-  <p>Hi</p>
+  <div id="header-container">
+    <div id="header">
+        <a class="header-link" href="../Contact/contact.html">Contact</a>
+        <a class="header-link" href="../portfolio/portfolio.html">Portfolio</a>
+        <a class="header-link" href="../about/about.html">About</a>
+    </div>
 
-  <div class="Name">
-    <p> Magic Man</p>
   </div>
-  <div class="icon">
-    <img src="./images/landing/icon.png">
+  <div id="page-body">
+    <div id="Name">
+      <p> Magic Man</p>
+    </div>
+
+    <div id="icon">
+      <img src="./images/landing/icon.png">
+    </div>
   </div>
-
-
+  </body>
 </body>
