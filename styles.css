@@ -1,0 +1,25 @@
+:root {
+    --header-colour: #c5cccf; /* Change the color value as desired */
+    --header-colour-hover: #ffffff;
+    --header-spacing: 50px;
+
+    --header-background-colour-bottomg: #1E2027;
+    --header-background-colour-topg: #2A2D35;
+    
+    
+    --background-colour-topg: #10101a;
+    --background-colour-bottomg: #202031;
+    --background-colour-accent: #2c3147;
+    --background-colour-border: #20242c;
+
+    --image-size: 500px;
+    --image-outline: #12121d;
+    --image-tint: #ff0000;
+
+    --textbox-colour: #adb5b6;
+}
+
+@font-face {
+    font-family: 'CustomFont', monospace;
+    src: url(./LibreFranklin-VariableFont_wght.ttf) format('ttf');
+}
