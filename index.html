@@ -2,6 +2,7 @@
 <head>
   <title>Magic Man Portfolio</title>
   <link rel="stylesheet" href="./styles.css">
+  <script src="portfolio.js"></script>
 
   <style>
 
@@ -54,9 +55,6 @@
       background-color: var(--box);
       
       border-bottom: 5px solid var(--box-outline);
-
-      
-      
     }
 
     .img-background-container {
@@ -155,9 +153,13 @@
         flex-direction: row;
         flex-wrap: wrap;
         padding-bottom: 50px;
-        width: 90%;
+        width: 100%;
         min-height: 100px;
         justify-content: center;
+    }
+
+    #info-container {
+        width:80%;
     }
 
 
@@ -180,7 +182,7 @@
       border-radius: 20px;
       border: 3px solid var(--box-outline);
       box-shadow: 0  10px 20px var(--background-shadow);
-
+      color: var(--text);
       
     }
 
@@ -211,7 +213,6 @@
         height: 55px;
         text-align: center;
         border-bottom: 3px solid var(--background-shadow);
-        color: var(--text);
         margin-bottom: 20px;
 
         font-size: 40px;
@@ -242,7 +243,7 @@
             
         }
 
-    @media (max-width: 1000px) {
+    @media (max-width: 900px) {
         .plushie-tile {
             display: none;
         }
@@ -298,7 +299,33 @@
         }
     }
 
+    .section-title-container {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        width: 100%;    
+        height: 50px;
+        background-color: var(--box);
+        border-bottom: 5px solid var(--box-outline);
+        
 
+    }
+    .section-title {
+        position: relative;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 15%;
+        min-width: 250px;
+        height: 80%; 
+        top: 10%;
+
+        border-left: 3px solid var(--box-outline);
+        border-right: 3px solid var(--box-outline);
+        color: var(--text);
+        font-size: 30px;
+    }
     
     #price-name {
         position: relative;
@@ -316,12 +343,6 @@
         width: 50%;
         left: 25%;
         font-size: 20px;
-    }
-    #price-info {
-
-    }
-    #price-time {
-
     }
 
     .price-tiles #price-img {
@@ -395,6 +416,9 @@
         </div>
 
         <div class="tiles-container" id="price-container">
+            <div class="section-title-container"> 
+                <div class="section-title">Commissions</div>
+            </div>
             <div class="price-tiles tile">
                 <div>
                     <div class="price-tile-txt">
@@ -450,19 +474,8 @@
     </div>
 
 
-
+    
     <script>
-        const headertextresize = document.getElementsByClassName("header-link");
-
-        function resizeText() {
-            const containerWidth = headertextresize.Width; // Get the width of the container
-            const fontSize = Math.min(containerWidth / 10, 40);
-
-            headertextresize.style.fontSize = `${fontSize}px`;
-        }
-
-        
-
         //contact button
         document.getElementById("contact-button").addEventListener("click", function() {
         // Get the target element
@@ -486,11 +499,10 @@
 
         // Attach the scroll event listener
         window.addEventListener('scroll', handleScroll);
-        window.addEventListener('resize',resizeText);
 
         window.addEventListener('load', handleScroll);
 
         
-
+        
     </script>
 </body>
