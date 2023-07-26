@@ -167,11 +167,10 @@
       text-align: center;
       flex-grow: 1;
       flex-shrink: 1;
-      flex-basis: 1;
       flex-direction: column;
       /* Add the desired width for the first two tiles (70%) */
       flex-basis: 200px;
-      height: 500px;
+      height: auto;
       margin: 10px;
       
       overflow: hidden;
@@ -199,6 +198,7 @@
         position: absolute;
         top: 0;
         left: 0;
+
         width: 100%;
         height: 100%;
         object-fit: cover; /* Ensure the image fills the square area without stretching */
@@ -272,11 +272,62 @@
             bottom: 10%;
         }
 
+        #price-container {
+            width: 60%;
+            padding-top: 0;
+        }
+
+        .price-tiles {
+            justify-content: left;
+            text-align: left;
+            padding-left: 20px;
+            
+        }
+
+        .price-tiles #price-name, .price-tiles #price-amount {
+            width: 25%;
+            left: 0;
+        }
+
+        #price-img {
+            position: absolute;
+            top: 0;
+            right: 0;
+            display: flex;
+            flex-direction: row;
+        }
     }
 
 
     
+    #price-name {
+        position: relative;
+        font-weight: bold;
+        border-bottom: 2px solid var(--background-shadow);
+        
+        width: 50%;
+        left: 25%;
+        font-size: 20px;
+    }
+    #price-amount {
+        position: relative;
+        font-weight: bold;
+        
+        width: 50%;
+        left: 25%;
+        font-size: 20px;
+    }
+    #price-info {
 
+    }
+    #price-time {
+
+    }
+
+    .price-tiles #price-img {
+        width: 200px;
+        height: auto;
+    }
 
 
 
@@ -344,37 +395,51 @@
         </div>
 
         <div class="tiles-container" id="price-container">
-            <div class="tile">
+            <div class="price-tiles tile">
                 <div>
-                    <p >Skin / Small texture</p>
-                    <p>£5-£10</p>
-                    <p>Vanilla default skin or Texture</p>
-                    <p> - 1-2 days -</p>
+                    <div class="price-tile-txt">
+                        <p id="price-name">Vanilla</p>
+                        <p id="price-amount">£5-£10</p>
+                        <p id="price-info">Minecraft Skins or Textures</p>
+                        <p id="price-time"> - 1-2 days -</p>
+                    </div>
+
+                    <img id="price-img" src="./images/landing/miles-head.png">
                 </div>
             </div>
-            <div class="tile">
+            <div class="price-tiles tile">
                 <div>
-                    <p>Small model</p>
-                    
-                    £15+
-                    <p>Vanilla+ and simple models</p>
-                    <p>- 1-2 days -</p>
+                    <div class="price-tile-txt">
+                        <p id="price-name">Small</p>
+                        
+                        <p id="price-amount">£15+</p>
+                        <p id="price-info">Vanilla+ and Simple Models</p>
+                        <p id="price-time">- 1-2 days -</p>
+                    </div>
+                    <img id = "price-img" src="./images/landing/small-model.png">
                 </div>
             </div>
-            <div class="tile">
+            <div class="price-tiles tile">
                 <div>
-                    <p>Medium model</p>
-                    £25+
-                    <p>Custom / original model, medium to large sizing</p>
-                    <p>- 3-5 days -</p>
+                    <div class="price-tile-txt">
+                        <p id="price-name">Medium</p>
+                        <p id="price-amount">£25+</p>
+                        <p id="price-info">Medium to Large Sizing</p>
+                        <p id="price-time">- 3-5 days -</p>
+                    </div>
+
+                    <img id="price-img" src="./images/landing/medium-model.png">
                 </div>
             </div>
-            <div class="tile">
+            <div class="price-tiles tile">
                 <div>
-                    <p>Large model</p>
-                    £50+
-                    <p>Get in contact</p>
-                    <p>- 7+ days -</p>
+                    <div class="price-tile-txt">
+                        <p id="price-name">Large</p>
+                        <p id="price-amount">£50+</p>
+                        <p id="price-info">Get in Contact</p>
+                        <p id="price-time">- 7+ days -</p>
+                    </div>
+                    <img id="price-img" src="./images/landing/large-model.png">
                 </div>
             </div>
             
