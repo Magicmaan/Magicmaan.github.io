@@ -6,19 +6,20 @@
     --header-background-colour-bottomg: #1E2027;
     --header-background-colour-topg: #2A2D35;
     
+    --box: #e9e8e3;
+    --box-outline: #b9b8b0;
     
-    --background-colour: #1a2421;
-    --background-colour-accent: #ffffff;
-    --background-colour-border: #20242c;
+    --background: #7f8ca8;
+    --background-shadow: #50596b;
 
     
 
-    --text-colour: #eaf2f3;
-    --text-colour-shadow: #0d1311;
+    --text: #2e2c2c;
+    --text-shadow: #1a1818;
 }
 
 @font-face {
     font-family: 'CustomFont', monospace;
-    src: url(./LibreFranklin-VariableFont_wght.ttf) format('ttf');
+    src: url(https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZthiI2B.woff2) format('woff2');
 }
 
