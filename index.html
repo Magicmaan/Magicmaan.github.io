@@ -230,6 +230,11 @@
         font-size: 20px;
     }
 
+    .contact-tile-content {
+            display: flex;
+            flex-direction: column;
+            
+        }
 
     @media (max-width: 1000px) {
         .plushie-tile {
@@ -241,6 +246,24 @@
             justify-content: center;
             width: 80%;
             padding-top: 150px;
+        }
+
+        .contact-tile-content {
+            display: flex;
+            flex-direction: row;
+            
+        }
+
+        #discord {
+            position: absolute;
+            right: 15%;
+            bottom: 10%;
+        }
+
+        #twitter {
+            position: absolute;
+            left: 15%;
+            bottom: 10%;
         }
 
     }
@@ -299,15 +322,17 @@
                     You can reach me on the links below
                 </div>
 
-                <p class="contacts-text">magicman3006</p>
-                <a href="https://discordapp.com/users/Magic Man(?)#3006" id="discord">
-                    <img src="./images/landing/discord.png" alt="Discord">
-                </a>
-                
-                <p class="contacts-text">@MagicMrmann</p>
-                <a href="https://twitter.com/MagicMrmann" id="twitter">
-                    <img src="./images/landing/twitter.png" alt="Twitter">
-                </a>
+                <div class="constact-tile-content">
+                    <p class="contacts-text">magicman3006</p>
+                    <a href="https://discordapp.com/users/Magic Man(?)#3006" id="discord">
+                        <img src="./images/landing/discord.png" alt="Discord">
+                    </a>
+                    
+                    <p class="contacts-text">@MagicMrmann</p>
+                    <a href="https://twitter.com/MagicMrmann" id="twitter">
+                        <img src="./images/landing/twitter.png" alt="Twitter">
+                    </a>
+                </div>
             </div>
         </div>
         
