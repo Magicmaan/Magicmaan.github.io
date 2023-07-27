@@ -2,11 +2,20 @@
 <head>
   <title>Magic Man Portfolio</title>
   <link rel="stylesheet" href="./styles.css">
-  <script src="portfolio.js"></script>
+
+    <!-- header -->
+    <link rel="stylesheet" href="./other/header.css">
+
+    <!-- Portfolio content -->
+    <link rel="stylesheet" href="./portfolio/Portfolio.css">
+    <script src="portfolio.js"></script>
+
+    <!-- Base tile content-->
+    <link rel="stylesheet" href="./other/tiles.css">
+
+
 
   <style>
-
-
 
     html, body {
       background-color: var(--background);
@@ -21,119 +30,61 @@
       text-decoration: none;
     }
 
-    .fullheader-container {
-        position: fixed;
-        width: 100%;
-        height: auto;
-        z-index: 1;
+    @media (max-width: 900px) {
+    .plushie-tile {
+        display: none;
+    }
+    .tiles-container {
         display: flex;
+        flex-direction: column;
         justify-content: center;
+        width: 80%;
+        padding-top: 150px;
     }
 
-    #header-container { /* header stuff */
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      
-      height: auto;
-      position: relative;
-      
-      overflow: hidden;
-
-      
-      box-shadow: 0 30px 50px var(--background-shadow);
-    } 
-
-    
-    #header {
-      display: flex; /* Use flexbox to create a horizontal layout */
-      justify-content: center; /* Center the items horizontally */
-      
-      width: 100%; 
-      
-
-      background-color: var(--box);
-      
-      border-bottom: 5px solid var(--box-outline);
-    }
-
-    .img-background-container {
-        width: 105%;
-        height: 200px;
-        position: relative; 
+    .contact-tile-content {
         display: flex;
-        justify-content: center;
-        transition: height 0.3s ease;
+        flex-direction: row;
     }
 
-    .img-background-container.collapsed {
-        height: 0;
-    }
-
-    .img-background {
-        background-image: url(./images/landing/panaorama.png);
-        background-size: 100%;
-        background-position: center;
-
-        width: 100%;
-        height: 100%;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        
-
-        filter: blur(5px);
-    }
-
-
-
-    .icon {
+    #discord {
         position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); 
-
-        border-radius: 50%;
-        width: 200px;
-        height: auto;
-        top: 100%;
-
-        border: 5px solid #dee4e6;
-
-        z-index: 1;
+        right: 15%;
+        bottom: 10%;
     }
 
-    .header-link {
-        padding: 20px 20px;
-        position: relative;
+    #twitter {
+        position: absolute;
+        left: 15%;
+        bottom: 10%;
+    }
+
+    #price-container {
+        width: 60%;
+        padding-top: 0;
+    }
+
+    .price-tiles {
+        justify-content: left;
+        text-align: left;
+        padding-left: 20px;
+        
+    }
+
+    .price-tiles #price-name, .price-tiles #price-amount {
+        width: 25%;
+        left: 0;
+    }
+
+    #price-img {
+        position: absolute;
+        top: 0;
+        right: 0;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        
-        
-        margin-left: 120px;
-        margin-right: 120px;
-
-        border-left: 3px solid var(--box-outline);
-        border-right: 3px solid var(--box-outline);
-        top: 25%;
-        width: 10%;
-        min-width: 200px;
-        height: 5%;
-        text-align: center;
-
-        font-size: 30px;
-        cursor: pointer;
+        flex-direction: row;
     }
+}
 
-    .header-link-txt {
-        color: var(--text);
-    }
-
-
-    
-
-    
 
     #page-body {
       height: auto;
@@ -148,22 +99,15 @@
 
     }
 
-    .tiles-container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        padding-bottom: 50px;
-        width: 100%;
-        min-height: 100px;
-        justify-content: center;
-    }
+
 
     #info-container {
         width:80%;
     }
 
 
-    .tile {
+
+    .portfolio-tile {
       position: relative;
       display: flex;
       text-align: center;
@@ -173,18 +117,17 @@
       /* Add the desired width for the first two tiles (70%) */
       flex-basis: 200px;
       height: auto;
-      margin: 10px;
+      margin: 2px;
       
       overflow: hidden;
 
-      background-color: var(--box);
+      background-color: #807d83;
 
-      border-radius: 20px;
       border: 3px solid var(--box-outline);
-      box-shadow: 0  10px 20px var(--background-shadow);
       color: var(--text);
       
     }
+
 
     .plushie-tile {
          /* This creates a 1:1 (square) aspect ratio */
@@ -206,17 +149,7 @@
         object-fit: cover; /* Ensure the image fills the square area without stretching */
     }
 
-    .tile-title {
-        position: relative;
-        width: 50%;
-        left: 25%;
-        height: 55px;
-        text-align: center;
-        border-bottom: 3px solid var(--background-shadow);
-        margin-bottom: 20px;
-
-        font-size: 40px;
-    }
+    
 
 
     .about-text, .contacts-text {
@@ -243,89 +176,9 @@
             
         }
 
-    @media (max-width: 900px) {
-        .plushie-tile {
-            display: none;
-        }
-        .tiles-container {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            width: 80%;
-            padding-top: 150px;
-        }
+    
 
-        .contact-tile-content {
-            display: flex;
-            flex-direction: row;
-            
-        }
-
-        #discord {
-            position: absolute;
-            right: 15%;
-            bottom: 10%;
-        }
-
-        #twitter {
-            position: absolute;
-            left: 15%;
-            bottom: 10%;
-        }
-
-        #price-container {
-            width: 60%;
-            padding-top: 0;
-        }
-
-        .price-tiles {
-            justify-content: left;
-            text-align: left;
-            padding-left: 20px;
-            
-        }
-
-        .price-tiles #price-name, .price-tiles #price-amount {
-            width: 25%;
-            left: 0;
-        }
-
-        #price-img {
-            position: absolute;
-            top: 0;
-            right: 0;
-            display: flex;
-            flex-direction: row;
-        }
-    }
-
-    .section-title-container {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        width: 100%;    
-        height: 50px;
-        background-color: var(--box);
-        border-bottom: 5px solid var(--box-outline);
-        
-
-    }
-    .section-title {
-        position: relative;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        width: 15%;
-        min-width: 250px;
-        height: 80%; 
-        top: 10%;
-
-        border-left: 3px solid var(--box-outline);
-        border-right: 3px solid var(--box-outline);
-        color: var(--text);
-        font-size: 30px;
-    }
+    
     
     #price-name {
         position: relative;
@@ -371,6 +224,7 @@
             </div>
         </div>
     </div>
+
 
     <div id="page-body">
         <div class="tiles-container" id="info-container">
@@ -470,7 +324,33 @@
 
         </div>
         
-        
+        <div class="tiles-container" id="portfolio-container">
+            <div class="section-title-container"> 
+                <div class="section-title">Portfolio</div>
+            </div>
+
+            <div class="Skin-sector tile">
+                    <div class="section-title-container"> 
+                        <div class="section-title">Skins</div>
+                    </div>
+                    
+                    <div class="tiles-container" id="portfolio-container">
+                        <div class="portfolio-tile">
+                            <img src="./images/portfolio/Skins/amazingspider.png">
+                        </div>
+                        <div class="portfolio-tile">
+                            <img src="./images/portfolio/Skins/amazingspider.png">
+                        </div>
+                        <div class="portfolio-tile">
+                            <img src="./images/portfolio/Skins/amazingspider.png">
+                        </div>
+                        <div class="portfolio-tile">
+                            <img src="./images/portfolio/Skins/amazingspider.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
 
@@ -479,10 +359,20 @@
         //contact button
         document.getElementById("contact-button").addEventListener("click", function() {
         // Get the target element
-        const targetElement = document.getElementById("info-container");
+        const infoElement = document.getElementById("info-container");
 
         // Scroll to the target element
-        targetElement.scrollIntoView({ behavior: "smooth" });
+        infoElement.scrollIntoView({ behavior: "smooth" });
+        });
+
+
+        //contact button
+        document.getElementById("portfolio-button").addEventListener("click", function() {
+        // Get the target element
+        const portfolioElement = document.getElementById("portfolio-container");
+
+        // Scroll to the target element
+        portfolioElement.scrollIntoView({ behavior: "smooth" });
         });
 
 
