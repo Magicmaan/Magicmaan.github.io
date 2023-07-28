@@ -1,12 +1,24 @@
 .tiles-container {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column; 
+    flex-grow: 1;
     padding-bottom: 50px;
     width: 100%;
     min-height: 100px;
+    height: auto;
     justify-content: center;
 }
+
+.tile-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+    min-height: 100px;
+    justify-content: center;
+    padding-top: 10px;
+}   
+
 
 .tile {
     position: relative;
@@ -59,7 +71,7 @@
     font-size: 30px;
 }
 
-.tile-title {
+#tile-title-large {
     position: relative;
     width: 50%;
     left: 25%;
@@ -69,4 +81,18 @@
     margin-bottom: 20px;
 
     font-size: 40px;
+}
+
+
+
+#tile-title-small {
+    position: relative;
+    width: 50%;
+    left: 25%;
+
+    font-weight: bold;
+    border-bottom: 2px solid var(--background-shadow);
+    
+    
+    font-size: 20px;
 }
