@@ -23,3 +23,29 @@
     src: url(https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZthiI2B.woff2) format('woff2');
 }
 
+
+html, body {
+    background-color: var(--background);
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: customFont, monospace;
+    color: var(--text);
+    text-decoration: none;
+}
+
+#page-body {
+    height: auto;
+    min-height: 700px;
+    top: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+}

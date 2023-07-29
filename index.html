@@ -6,146 +6,18 @@
     <!-- header -->
     <link rel="stylesheet" href="./other/header.css">
 
-    <!-- Portfolio content -->
+    <!-- Portfolio / contact content -->
     <link rel="stylesheet" href="./portfolio/portfolio.css">
-    <script src="portfolio.js"></script>
+    <link rel="stylesheet" href="./other/other.css">
+
+    
 
     <!-- Base tile content-->
-    <link rel="stylesheet" href="./other/tiles.css">
-
-
-
-  <style>
-
-    html, body {
-        background-color: var(--background);
-        background-size: cover;
-        margin: 0;
-        padding: 0;
-    }
-    
-    * {
-        font-family: customFont, monospace;
-        color: var(--text);
-        text-decoration: none;
-    }
-
-
-
-
-    #page-body {
-        height: auto;
-        min-height: 700px;
-        top: 400px;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-
-        align-items: center;
-        justify-content: center;
-
-    }
-
-
-
-    #info-container {
-        width:80%;
-    }
-
-
-
-    .portfolio-tile {
-        position: relative;
-        display: flex;
-        text-align: center;
-        flex-grow: 1;
-        flex-shrink: 1;
-        flex-direction: column;
-        /* Add the desired width for the first two tiles (70%) */
-        flex-basis: 200px;
-        height: auto;
-        margin: 2px;
-
-        overflow: hidden;
-
-        
-        border: 3px solid var(--box-outline);
-        color: var(--text);
-
-   
-
-        
-      
-    }
-
-
-    .plushie-tile {
-         /* This creates a 1:1 (square) aspect ratio */
-        position: relative;
-        overflow: hidden;
-        background-color: transparent;
-        box-shadow: 0 0 0 transparent;
-        border: 0 solid transparent;
-    }
-
-    /* Styles for the image inside plushie-tile */
-    .plushie-tile img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover; /* Ensure the image fills the square area without stretching */
-    }
-
-    
-
-
-    .about-text, .contacts-text {
-        position: relative;
-        height: auto;
-        margin-left: 20px;
-        margin-right: 20px;
-        font-size: 20px;
-    }
-
-    
-    .contact-tile img {
-        width: 100px;
-        height: auto;
-    }
-
-    .contacts-text {
-        font-size: 20px;
-    }
-
-    .contact-tile-content {
-        display: flex;
-        flex-direction: column;      
-    }
-
-
-    
-    
-    #price-amount {
-        position: relative;
-        font-weight: bold;
-        
-        width: 50%;
-        left: 25%;
-        font-size: 20px;
-    }
-
-    .price-tiles #price-img {
-        width: 200px;
-        height: auto;
-    }
-
-
-  </style>
+    <link rel="stylesheet" href="./other/tiles.css">    
 </head>
 
 <body>
+    <!--Header-->
     <div class="fullheader-container">
         <img class="icon" id="icon" src="./images/landing/icon.png">
 
@@ -163,19 +35,17 @@
     </div>
     </body>
 
-
+    
     <div id="page-body">
-        <div class="tiles-container" id="info-container">
-            <div class="tile-row">
+        <!--info tiles-->
+        <div class="tiles-container" id="info-container">   <div class="tile-row">
                 <div class="about-tile tile">
                     <p id="tile-title-large">About Me</p>
-
                     <div class="about-text">
                         <p id="name-magic">Hey, I'm MagicMan.</p>
                         <p>Over 3 years in experience in Blockbench and pixel art</p>
                         <p>I enjoy creative new designs and am open to anything.</p>
                     </div>
-
                 </div>
 
                 <div class="plushie-tile tile">
@@ -185,11 +55,9 @@
 
                 <div class="contact-tile tile">
                     <p id="tile-title-large">Contact</p>
-
                     <div class="contacts-text">
                         Reach out to me!
                     </div>
-
                     <div class="constact-tile-content">
                         <p class="contacts-text">magicman3006</p>
                         <a href="https://discordapp.com/users/Magic Man(?)#3006" id="discord">
@@ -205,11 +73,14 @@
             </div>
         </div>
 
+
+        <!-- Prices tiles-->
         <div class="section-title-container"> 
             <div class="section-title">Commissions</div>
         </div>
-        <div class="tiles-container" id="price-container">
-            <div class="tile-row">
+        
+        <div class="tiles-container" id="price-container">  <div class="tile-row">
+            
                 <div class="price-tiles tile">
                     <div>
                         <div class="price-tile-txt">
@@ -258,53 +129,57 @@
                     </div>
                 </div>
             </div>
-
-            
         </div>
         
+
+
+
         <div class="section-title-container"> 
             <div class="section-title">Portfolio</div>
         </div>
         <div class="tiles-container" id="portfolio-container">
-                <div class="section-title-container"> 
-                    <div class="section-title">Skins</div>
-                </div>
-                
-                <div class="tiles-container" id="portfolio-container">
-                    <div class="tile-row">
-                        <div class="portfolio-tile">
-                            <img src="./images/portfolio/Skins/commando.png">
-                        </div>
-                        <div class="portfolio-tile">
-                            <img src="./images/portfolio/Skins/loqor.png">
-                        </div>
-                        <div class="portfolio-tile">
-                            <img src="./images/portfolio/Skins/miles.png">
-                        </div>
-                        <div class="portfolio-tile">
-                            <img src="./images/portfolio/Skins/chell.png">
-                        </div>
-                        <div class="portfolio-tile">
-                            <img src="./images/portfolio/Skins/ironspider.png">
-                        </div>
-                        <div class="portfolio-tile">
-                            <img src="./images/portfolio/Skins/amazingspider.png">
-                        </div>
-                    </div>
-
-                    <div class="tile-row">
-                        
-                        <div class="portfolio-tile">
-                            <img src="./images/portfolio/Skins/gwenspider.png">
-                        </div>
-                    </div>
+            <div class="section-title-container"> 
+                <div class="section-title">Skins</div>
+            </div>
+            
+            <div class="tiles-container">
+                <div class="portfolio-grid" id="grid-container1">
+                        <img src="./images/portfolio/Skins/commando.png">
+                        <img src="./images/portfolio/Skins/loqor.png">
+                        <img src="./images/portfolio/Skins/tennant.png">
+                        <img src="./images/portfolio/Skins/miles.png">
+                        <img src="./images/portfolio/Skins/chell.png">
+                        <img src="./images/portfolio/Skins/ironspider.png">
+                        <img src="./images/portfolio/Skins/amazingspider.png">
+                        <img src="./images/portfolio/Skins/gwenspider.png">
                 </div>
             </div>
+        </div>
+
+        <div class="tiles-container" id="portfolio-container">
+            <div class="section-title-container"> 
+                <div class="section-title">Tardis Refined</div>
+            </div>
+            
+            <div class="tiles-container">
+                <div class="portfolio-grid" id="grid-container2">
+                        <img src="./images/portfolio/Tdis/portalgif.gif">
+                        <img src="./images/portfolio/Tdis/toyotagif.gif">
+                        <img src="./images/portfolio/Tdis/coppergif.gif">
+                        <img src="./images/portfolio/Tdis/coral.png">
+                        <img src="./images/portfolio/Tdis/capsule.png">
+                        <img src="./images/portfolio/Tdis/tdis.png">
+                        <img src="./images/portfolio/Tdis/hieroglyph.png">
+                        <img src="./images/portfolio/Tdis/bigben.png">
+                        <img src="./images/portfolio/Tdis/pagoda.png">
+                </div>
+            </div>
+        </div>
         
     </div>
 
 
-    
+    <script src="./portfolio/portfolio.js"> </script>
     <script>
         //contact button
         document.getElementById("contact-button").addEventListener("click", function() {
@@ -343,6 +218,9 @@
         window.addEventListener('load', handleScroll);
 
         
-        
+        console.log("bean1");
     </script>
+
+    
+    
 </body>
