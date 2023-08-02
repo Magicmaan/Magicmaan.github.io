@@ -77,4 +77,60 @@ function GridSizing1() {
   window.addEventListener("resize", GridSizing1);
   window.addEventListener("resize", GridSizing2);
 
+
+
+  const expandedImages = new Set();
+
+  
+
+  function restoreImageStyles(img) {
+    const originalStyles = JSON.parse(img.dataset.originalStyles);
+    for (const prop in originalStyles) {
+      img.style[prop] = originalStyles[prop];
+    }
+  }
+  
+  function expandImage(img) {
+    var centerX = window.innerWidth / 2 - 400;
+    var centerY = window.innerHeight / 2 - 350;
+
+    const expandedStyles = {
+      position: "fixed",
+      top: `${centerY}px`,
+      left: `${centerX}px`,
+      width: "800px",
+      height: "auto",
+      boxShadow: "0 0 500px black",
+    }
+    
+    if (expandedImages.size > 0) {
+      expandedImages.forEach(restoreImageStyles);
+      expandedImages.clear();
+
+      
+    } else {
+      Object.assign(img.style, expandedStyles);
+      expandedImages.add(img);
+    }
+  }
+
+  
+  const portfolioDiv = document.getElementById("grid-container2");
+  const portfolioimgs = portfolioDiv.querySelectorAll('img');
+  
+  portfolioimgs.forEach(img => {
+    img.dataset.originalStyles = JSON.stringify({
+      position: img.style.position,
+      top: img.style.top,
+      left: img.style.left,
+      width: img.style.width,
+      height: img.style.height,
+      boxShadow: img.style.boxShadow,
+    });
+  
+    img.addEventListener('click', function() {
+      expandImage(img);
+    });
+  });
+
   
