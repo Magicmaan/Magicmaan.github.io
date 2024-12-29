@@ -1,226 +1,300 @@
 <!DOCTYPE html>
 <head>
-  <title>Magic Man Portfolio</title>
-  <link rel="stylesheet" href="./styles.css">
+	<title>Magic Man Portfolio</title>
 
-    <!-- header -->
-    <link rel="stylesheet" href="./other/header.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet" />
 
-    <!-- Portfolio / contact content -->
-    <link rel="stylesheet" href="./portfolio/portfolio.css">
-    <link rel="stylesheet" href="./other/other.css">
+	<link rel="stylesheet" href="./styles/styles.css" />
 
-    
+	<!-- header -->
+	<link rel="stylesheet" href="./styles/header.css" />
 
-    <!-- Base tile content-->
-    <link rel="stylesheet" href="./other/tiles.css">    
+	<!-- content -->
+	<link rel="stylesheet" href="./styles/content.css" />
+
+	<!-- program icons-->
+	<link
+		rel="stylesheet"
+		type="text/css"
+		href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+	<script
+		src="https://kit.fontawesome.com/1cc2316f60.js"
+		crossorigin="anonymous"></script>
+
+	<meta
+		name="viewport"
+		content="width=device-width,height=device-height,initial-scale=1" />
 </head>
 
 <body>
-    <!--Header-->
-    <div class="fullheader-container">
-        <img class="icon" id="icon" src="./images/landing/icon.png">
+	<!--Header-->
+	<div class="header-container">
+		<div id="header-button-container">
+			<a class="header-button" id="contact-button">About</a>
+			<a class="header-button" id="experience-button" href="#projects">Experience</a>
 
-        <div id="header-container">
-            <div class="img-background-container">
-                <div class="img-background"></div>
-            </div>
+			<a class="header-button" id="portfolio-button">Contact</a>
+		</div>
+	</div>
 
-            <div id="header">
-                <a class="header-link" id="contact-button">Contact</a>
-                
-                <a class="header-link" id="portfolio-button">Portfolio</a>
-            </div>
-        </div>
-    </div>
-    </body>
+	<div id="page-body">
+		<div class="name-container">
+			<div class="icon-container">
+				<img
+					src="./images/landing/Icon.png"
+					alt="Icon"
+					style="
+						display: inherit;
+						width: 150px;
+						height: 150px;
+						border-radius: inherit;
+						position: absolute;
+						border: 2px solid rgb(192, 192, 192);
+					" />
+				<div style="background-color: rgba(255, 255, 255, 0)" class="icon-highlight">
+					<div class="noise-radial"></div>
+				</div>
+			</div>
 
-    
-    <div id="page-body">
-        <!--info tiles-->
-        <div class="tiles-container" id="info-container">   <div class="tile-row">
-                <div class="about-tile tile">
-                    <p id="tile-title-large">About Me</p>
-                    <div class="about-text">
-                        <p id="name-magic">Hey, I'm MagicMan.</p>
-                        <p>Over 3 years in experience in Blockbench and pixel art</p>
-                        <p>I enjoy creative new designs and am open to anything.</p>
-                    </div>
-                </div>
+			<div style="display: flex; flex-direction: column; margin-left: 4rem; width: 95%">
+				<div class="name-text">
+					<p>Theo Baker</p>
+					<p>Programmer, Modeller</p>
+				</div>
+				<div class="socials">
+					<a
+						href="https://github.com/Magicmaan"
+						class="social-icon icon-link"
+						title="GitHub">
+						<i class="fab fa-github"></i>
+					</a>
+					<a
+						href="https://x.com/MagicMrmann"
+						class="social-icon icon-link"
+						title="Twitter">
+						<i class="fab fa-twitter"></i>
+					</a>
+					<a
+						href="mailto:theobaker99@gmail.com"
+						class="social-icon icon-link"
+						title="Email">
+						<i class="fa-solid fa-envelope"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="content-container" id="projects">
+			<div class="content-header-text">Projects</div>
+			<div class="projects">
+				<div class="project-item">
+					<img src="./images/placehold_project.png" alt="Project Image" />
+					<div class="project-content">
+						<div class="project-item-header">
+							<p>MCubed</p>
+							<div class="project-item-header-icons">
+								<a class="icon-link social-icon">
+									<i class="devicon-github-original" title="GitHub"></i>
+								</a>
+								<a class="icon-link social-icon" style="font-size: 1.25rem">
+									<i class="fa-solid fa-up-right-from-square" title="Link"></i>
+								</a>
+							</div>
+						</div>
 
-                <div class="plushie-tile tile">
-                    <img src="./images/landing/chell.png">
-                </div>
+						<p class="project-description">
+							MCubed is a cube based modelling program, using React, threeJS, and
+							tailwind. Single developer project, contributing all code and all assets.
+						</p>
+					</div>
+				</div>
+				<div class="project-item">
+					<img src="./images/tardisrefined.png" alt="Project Image" />
+					<div class="project-content">
+						<div class="project-item-header">
+							<p>Tardis Refined</p>
+							<div class="project-item-header-icons">
+								<a
+									class="icon-link social-icon"
+									href="https://github.com/Whocraft/TardisRefined">
+									<i class="devicon-github-original" title="GitHub"></i>
+								</a>
+								<a
+									class="icon-link social-icon"
+									style="font-size: 1.25rem"
+									href="https://modrinth.com/mod/tardis-refined">
+									<i class="fa-solid fa-up-right-from-square" title="Link"></i>
+								</a>
+							</div>
+						</div>
 
+						<p class="project-description">
+							Tardis Refined is a Minecraft mod that adds the TARDIS from the BBC
+							Television show "DOCTOR WHO". Collaborative project with Whocraft (Main team
+							of 4). Contributing large majority of assets, and some code.
+						</p>
+					</div>
+				</div>
+				<div class="project-item">
+					<img src="./images/ptol.png" alt="Project Image" class="vignette" />
+					<div class="project-content">
+						<div class="project-item-header">
+							<p>Ptol</p>
+							<div class="project-item-header-icons">
+								<a class="icon-link social-icon">
+									<i class="devicon-github-original" title="GitHub"></i>
+								</a>
+								<a class="icon-link social-icon" style="font-size: 1.25rem">
+									<i class="fa-solid fa-up-right-from-square" title="Link"></i>
+								</a>
+							</div>
+						</div>
 
-                <div class="contact-tile tile">
-                    <p id="tile-title-large">Contact</p>
-                    <div class="contacts-text">
-                        Reach out to me!
-                    </div>
-                    <div class="constact-tile-content">
-                        <p class="contacts-text">magicman3006</p>
-                        <a href="https://discordapp.com/users/Magic Man(?)#3006" id="discord">
-                            <img src="./images/landing/discord.png" alt="Discord">
-                        </a>
-                        
-                        <p class="contacts-text">@MagicMrmann</p>
-                        <a href="https://twitter.com/MagicMrmann" id="twitter">
-                            <img src="./images/landing/twitter.png" alt="Twitter">
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+						<p class="project-description">
+							Ptol is a 2D game based on the Portal series from Valve Software, using the
+							TIC80 fantasy console, and lua. Single developer project, contributing all
+							code and all assets besides music, which was contributed by a friend.
+						</p>
+					</div>
+				</div>
+				<div class="project-item">
+					<img src="./images/placehold_project.png" alt="Project Image" />
+					<div class="project-content">
+						<div class="project-item-header">
+							<p>Smart Thermostat</p>
+							<div class="project-item-header-icons">
+								<a class="icon-link social-icon">
+									<i class="devicon-github-original" title="GitHub"></i>
+								</a>
+								<a class="icon-link social-icon" style="font-size: 1.25rem">
+									<i class="fa-solid fa-up-right-from-square" title="Link"></i>
+								</a>
+							</div>
+						</div>
 
+						<p class="project-description">
+							Smart Thermostat is a project that uses a raspberry pi and node-red to
+							control a thermostat, using python, node-red, and javascript. Collaborative
+							project in a team of 5, contributing to the backend and frontend.
+						</p>
+					</div>
+				</div>
 
-        <!-- Prices tiles-->
-        <div class="section-title-container"> 
-            <div class="section-title">Commissions</div>
-        </div>
-        
-        <div class="tiles-container" id="price-container">  <div class="tile-row">
-            
-                <div class="price-tiles tile">
-                    <div>
-                        <div class="price-tile-txt">
-                            <p id="tile-title-small">Vanilla</p>
-                            <p id="price-amount">£5-£10</p>
-                            <p id="price-info">Minecraft Skins or Textures</p>
-                            <p id="price-time"> - 1-2 days -</p>
-                        </div>
+				<div class="project-item">
+					<img src="./images/placehold_project.png" alt="Project Image" />
+					<div class="project-content">
+						<div class="project-item-header">
+							<p>Aperture</p>
+							<div class="project-item-header-icons">
+								<a class="icon-link social-icon">
+									<i class="devicon-github-original" title="GitHub"></i>
+								</a>
+								<a class="icon-link social-icon" style="font-size: 1.25rem">
+									<i class="fa-solid fa-up-right-from-square" title="Link"></i>
+								</a>
+							</div>
+						</div>
 
-                        <img id="price-img" src="./images/landing/miles-head.png">
-                    </div>
-                </div>
-                <div class="price-tiles tile">
-                    <div>
-                        <div class="price-tile-txt">
-                            <p id="tile-title-small">Small</p>
-                            
-                            <p id="price-amount">£15+</p>
-                            <p id="price-info">Vanilla+ and Simple Models</p>
-                            <p id="price-time">- 1-2 days -</p>
-                        </div>
-                        <img id = "price-img" src="./images/landing/small-model.png">
-                    </div>
-                </div>
-                <div class="price-tiles tile">
-                    <div>
-                        <div class="price-tile-txt">
-                            <p id="tile-title-small">Medium</p>
-                            <p id="price-amount">£25+</p>
-                            <p id="price-info">Medium to Large Sizing</p>
-                            <p id="price-time">- 3-5 days -</p>
-                        </div>
+						<p class="project-description">
+							Aperture is a small educational content distribution platform, using HTML,
+							CSS, JavaScript, and PHP. Single developer project, contributing all code
+							and all assets.
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content-container" id="technologies">
+			<div class="content-header-text">Technologies</div>
+			<div class="technologies">
+				<div class="technology-item">
+					<i
+						class="devicon-cplusplus-plain technology-icon"
+						style="color: #0180cd"
+						title="C++"></i>
+					<img src="./styles/hexagon.svg" alt="Hexagon" class="hex" />
+				</div>
 
-                        <img id="price-img" src="./images/landing/medium-model.png">
-                    </div>
-                </div>
-                <div class="price-tiles tile">
-                    <div>
-                        <div class="price-tile-txt">
-                            <p id="tile-title-small">Large</p>
-                            <p id="price-amount">£50+</p>
-                            <p id="price-info">Get in Contact</p>
-                            <p id="price-time">- 7+ days -</p>
-                        </div>
-                        <img id="price-img" src="./images/landing/large-model.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-        
+				<div class="technology-item">
+					<i
+						class="devicon-java-plain technology-icon"
+						style="color: #ed2025; scale: 0.9; bottom: 10px; position: relative"
+						title="Java"></i>
+					<img src="./styles/hexagon.svg" alt="Hexagon" class="hex" />
+				</div>
+				<div class="technology-item">
+					<i
+						class="devicon-javascript-plain technology-icon"
+						style="color: #e08d2e; scale: 0.7"
+						title="JavaScript"></i>
+					<img src="./styles/hexagon.svg" alt="Hexagon" class="hex" />
+				</div>
+				<div class="technology-item">
+					<i
+						class="devicon-php-plain technology-icon"
+						style="color: #777bb3; scale: 0.9"
+						title="PHP"></i>
+					<img src="./styles/hexagon.svg" alt="Hexagon" class="hex" />
+				</div>
+				<div class="technology-item">
+					<i
+						class="devicon-python-plain technology-icon"
+						style="color: #326c9b; scale: 0.9"
+						title="Python"></i>
+					<img src="./styles/hexagon.svg" alt="Hexagon" class="hex" />
+				</div>
+				<div class="technology-item">
+					<i
+						class="devicon-react-original technology-icon"
+						style="color: #00d8ff; scale: 0.9"
+						title="React"></i>
+					<img src="./styles/hexagon.svg" alt="Hexagon" class="hex" />
+				</div>
+				<div class="technology-item">
+					<i
+						class="devicon-threejs-original technology-icon"
+						style="color: #00d8ff; scale: 0.9; left: 5px; position: relative"
+						title="THREEjs"></i>
+					<img src="./styles/hexagon.svg" alt="Hexagon" class="hex" />
+				</div>
+				<div class="technology-item">
+					<i
+						class="devicon-nodejs-plain-wordmark technology-icon"
+						style="color: #83cd29; scale: 0.8"
+						title="Node.js"></i>
+					<img src="./styles/hexagon.svg" alt="Hexagon" class="hex" />
+				</div>
+				<div class="technology-item">
+					<i
+						class="devicon-lua-plain technology-icon"
+						style="color: #4c4ce7; scale: 0.8"
+						title="Lua"></i>
+					<img src="./styles/hexagon.svg" alt="Hexagon" class="hex" />
+				</div>
+			</div>
+		</div>
+	</div>
 
-
-
-        <div class="section-title-container"> 
-            <div class="section-title">Portfolio</div>
-        </div>
-        <div class="tiles-container" id="portfolio-container">
-            <div class="section-title-container"> 
-                <div class="section-title">Skins</div>
-            </div>
-            
-            <div class="tiles-container">
-                <div class="portfolio-grid" id="grid-container1">
-                        <img src="./images/portfolio/Skins/commando.png">
-                        <img src="./images/portfolio/Skins/loqor.png">
-                        <img src="./images/portfolio/Skins/tennant.png">
-                        <img src="./images/portfolio/Skins/miles.png">
-                        <img src="./images/portfolio/Skins/chell.png">
-                        <img src="./images/portfolio/Skins/ironspider.png">
-                        <img src="./images/portfolio/Skins/amazingspider.png">
-                        <img src="./images/portfolio/Skins/gwenspider.png">
-                </div>
-            </div>
-        </div>
-
-        <div class="tiles-container" id="portfolio-container">
-            <div class="section-title-container"> 
-                <div class="section-title">Tardis Refined</div>
-            </div>
-            
-            <div class="tiles-container">
-                <div class="portfolio-grid" id="grid-container2">
-                        <img src="./images/portfolio/Tdis/portalgif.gif">
-                        <img src="./images/portfolio/Tdis/toyotagif.gif">
-                        <img src="./images/portfolio/Tdis/coppergif.gif">
-                        <img src="./images/portfolio/Tdis/coral.png">
-                        <img src="./images/portfolio/Tdis/capsule.png">
-                        <img src="./images/portfolio/Tdis/tdis.png">
-                        <img src="./images/portfolio/Tdis/hieroglyph.png">
-                        <img src="./images/portfolio/Tdis/bigben.png">
-                        <img src="./images/portfolio/Tdis/pagoda.png">
-                </div>
-            </div>
-        </div>
-        
-    </div>
-
-
-    <script src="./portfolio/portfolio.js"> </script>
-    <script>
-        //contact button
-        document.getElementById("contact-button").addEventListener("click", function() {
-        // Get the target element
-        const infoElement = document.getElementById("info-container");
-
-        // Scroll to the target element
-        infoElement.scrollIntoView({ behavior: "smooth" });
-        });
-
-
-        //contact button
-        document.getElementById("portfolio-button").addEventListener("click", function() {
-        // Get the target element
-        const portfolioElement = document.getElementById("portfolio-container");
-
-        // Scroll to the target element
-        portfolioElement.scrollIntoView({ behavior: "smooth" });
-        });
-
-
-
-        function handleScroll() {
-            const header = document.querySelector('.img-background-container');
-            const scrollThreshold = 120; // Set the amount of scroll at which the header should collapse
-            if (window.scrollY >= scrollThreshold) {
-                header.classList.add('collapsed');
-            } else {
-                header.classList.remove('collapsed');
-            }
-        }
-
-        // Attach the scroll event listener
-        window.addEventListener('scroll', handleScroll);
-
-        window.addEventListener('load', handleScroll);
-
-        
-        console.log("bean1");
-    </script>
-
-    
-    
+	<div class="background">
+		<div class="diagonal-stripe-group">
+			<div>
+				<div style="background-color: rgb(41, 176, 238)" class="diagonal-stripe">
+					<div class="noise"></div>
+				</div>
+			</div>
+			<div>
+				<div style="background-color: rgb(41, 238, 41)" class="diagonal-stripe">
+					<div class="noise"></div>
+				</div>
+			</div>
+			<div>
+				<div style="background-color: rgb(238, 41, 41)" class="diagonal-stripe">
+					<div class="noise"></div>
+				</div>
+			</div>
+		</div>
+	</div>
 </body>

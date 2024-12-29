@@ -1,0 +1,111 @@
+.background {
+	margin: 0;
+	padding: 0;
+	position: fixed;
+	top: 0;
+	left: 100;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background-color: #1a1818;
+}
+
+.diagonal-stripe-group {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	transform: rotate(45deg);
+	top: -55vh;
+	left: 55vw;
+}
+@media (max-width: 600px) {
+	.diagonal-stripe-group {
+		top: -25vh;
+		left: 25vw;
+	}
+}
+
+:root {
+	--header-colour: #c5cccf; /* Change the color value as desired */
+	--header-colour-hover: #ffffff;
+	--header-spacing: 50px;
+
+	--header-background-colour-bottomg: #1e2027;
+	--header-background-colour-topg: #2a2d35;
+
+	--box: #e9e8e3;
+	--box-outline: #b9b8b0;
+
+	--background: #7f8ca8;
+	--background-shadow: #50596b;
+
+	--text: #8b8787;
+	--text-shadow: #1a1818;
+}
+
+@font-face {
+	font-family: "CustomFont", monospace;
+	src: url(https://fonts.gstatic.com/s/inter/v12/UcCO3FwrK3iLTeHuS_fvQtMwCp50KnMw2boKoduKmMEVuLyfAZthiI2B.woff2)
+		format("woff2");
+}
+
+.vignette {
+	-webkit-box-shadow: inset 0px 0px 85px rgb(0, 0, 0, 1);
+	-moz-box-shadow: inset 0px 0px 85px rgba(0, 0, 0, 1);
+	box-shadow: inset 0px 0px 85px rgba(0, 0, 0, 1);
+}
+
+html,
+body {
+	background-size: cover;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+}
+
+* {
+	font-family: "Tomorrow", serif;
+	color: var(--text);
+	text-decoration: none;
+}
+
+.noise {
+	background: linear-gradient(-90deg, black, rgba(0, 0, 0, 0)), url(./noise.svg);
+	filter: contrast(100%) brightness(100%) invert(100%);
+	mix-blend-mode: multiply;
+	width: 100%;
+	height: 100%;
+}
+
+.noise-radial {
+	background: radial-gradient(circle, rgb(0, 0, 0), rgba(0, 0, 0, 0) 70%),
+		url(./noise.svg);
+	filter: contrast(200%) brightness(1000%) invert(100%);
+	mix-blend-mode: lighten;
+	width: 100%;
+	height: 100%;
+}
+
+.diagonal-stripe {
+	width: 10vw;
+	height: 200vh;
+}
+
+.page-body {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+	background-color: #1a1818;
+	/* Center the div horizontally */
+	width: 100%;
+	height: 100%;
+}
+
+.white {
+	color: white;
+}
