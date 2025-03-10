@@ -1,300 +1,407 @@
 <!DOCTYPE html>
-<head>
-	<title>Magic Man Portfolio</title>
 
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link
-		href="https://fonts.googleapis.com/css2?family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-		rel="stylesheet" />
+<html>
+	<head>
+		<title>Home</title>
+		<link rel="stylesheet" type="text/css" href="newstyles.css" />
+		<link rel="stylesheet" type="text/css" href="animations.css" />
+		<link rel="stylesheet" type="text/css" href="media.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Limelight&display=swap"
+			rel="stylesheet" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Farro:wght@300;400;500;700&display=swap"
+			rel="stylesheet" />
 
-	<link rel="stylesheet" href="./styles/styles.css" />
+		<!-- From jsDelivr -->
+		<!-- tailwind css -->
+		<!-- From UNPKG -->
+		<link
+			href="https://unpkg.com/tailwindcss-utilities@1.0.10/dist/tailwind-utilities.min.css"
+			rel="stylesheet"
+			crossorigin />
+		<script
+			src="https://unpkg.com/tailwindcss-utilities@1.0.10/dist/tailwind-utilities.min.js"
+			defer></script>
 
-	<!-- header -->
-	<link rel="stylesheet" href="./styles/header.css" />
+		<meta
+			name="viewport"
+			content="width=device-width,height=device-height,initial-scale=1" />
 
-	<!-- content -->
-	<link rel="stylesheet" href="./styles/content.css" />
-
-	<!-- program icons-->
-	<link
-		rel="stylesheet"
-		type="text/css"
-		href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
-	<script
-		src="https://kit.fontawesome.com/1cc2316f60.js"
-		crossorigin="anonymous"></script>
-
-	<meta
-		name="viewport"
-		content="width=device-width,height=device-height,initial-scale=1" />
-</head>
-
-<body>
-	<!--Header-->
-	<div class="header-container">
-		<div id="header-button-container">
-			<a class="header-button" id="contact-button">About</a>
-			<a class="header-button" id="experience-button" href="#projects">Experience</a>
-
-			<a class="header-button" id="portfolio-button">Contact</a>
+		<!-- program icons-->
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+		<script
+			src="https://kit.fontawesome.com/1cc2316f60.js"
+			crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<div class="header">
+			<h2>Home</h2>
+			<!--  TODO:make it a link component -->
+			<div class="tile box-shadow box-shadow-hover header-contact">
+				<p style="padding: 0; line-height: 0.5">Contact</p>
+				<div style="width: auto; height: 75%">
+					<img
+						src="images/arrow.png"
+						alt="Contact"
+						style="
+							width: auto;
+							height: 100%;
+							aspect-ratio: 1/1;
+							image-rendering: pixelated;
+						" />
+				</div>
+			</div>
 		</div>
-	</div>
+		<div class="pageContainer">
+			<div class="section">
+				<div class="section-row intro-container">
+					<div class="sub-section intro">
+						<h1>Theo Baker</h1>
 
-	<div id="page-body">
-		<div class="name-container">
-			<div class="icon-container">
-				<img
-					src="./images/landing/Icon.png"
-					alt="Icon"
+						<!-- Typewriter -->
+						<div class="tile bg-orange">
+							<span>Introduction</span>
+							<div class="typewriter-container">
+								<div class="typewriter-bar"></div>
+								<div class="typewriter" onload="typeWriter()">
+									<p class="typewriter-text"></p>
+									<p class="cursor">_</p>
+								</div>
+							</div>
+						</div>
+
+						<!-- Socials -->
+						<div class="tile box-shadow bg-purple">
+							<span>Contact me!</span>
+							<div class="socials-container">
+								<div class="socials" title="mail">
+									<img src="images/mail.png" alt="mail" />
+								</div>
+								<div class="socials" title="github">
+									<img src="images/github.png" alt="github" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="sub-section intro-image">
+						<img src="images/landing/chell.png" />
+					</div>
+				</div>
+			</div>
+			<div class="section">
+				<h2>Technologies</h2>
+				<div class="break"></div>
+				<div class="technologies-container">
+					<div
+						class="tile tile-ratio box-shadow box-shadow-hover technologies"
+						style="
+							background-color: #4f9af0;
+							justify-content: space-evenly;
+							color: white;
+						">
+						<img src="images/html.png" alt="html" />
+						<p class="fancy-button">HTML</p>
+						<div
+							style="
+								display: flex;
+								width: 75%;
+								height: 0.3rem;
+								background-color: rgba(255, 255, 255, 0.5);
+								border-radius: 0.125rem;
+							"></div>
+					</div>
+
+					<div
+						class="tile tile-ratio box-shadow box-shadow-hover technologies"
+						style="
+							background-color: #4f9af0;
+							justify-content: space-evenly;
+							color: white;
+						">
+						<img src="images/js.png" alt="javascript" />
+						<p class="fancy-button">Javascript</p>
+						<div
+							style="
+								display: flex;
+								width: 75%;
+								height: 0.3rem;
+								background-color: rgba(255, 255, 255, 0.5);
+								border-radius: 0.125rem;
+							"></div>
+					</div>
+
+					<div
+						class="tile tile-ratio box-shadow box-shadow-hover technologies"
+						style="
+							background-color: #4f9af0;
+							justify-content: space-evenly;
+							color: white;
+						">
+						<img src="images/ts.png" alt="Typescript" />
+						<p class="fancy-button">Typescript</p>
+						<div
+							style="
+								display: flex;
+								width: 75%;
+								height: 0.3rem;
+								background-color: rgba(255, 255, 255, 0.5);
+								border-radius: 0.125rem;
+							"></div>
+					</div>
+
+					<div
+						class="tile tile-ratio box-shadow box-shadow-hover technologies"
+						style="
+							background-color: #4f9af0;
+							justify-content: space-evenly;
+							color: white;
+						">
+						<img src="images/python.png" alt="Python" />
+						<p class="fancy-button">Python</p>
+						<div
+							style="
+								display: flex;
+								width: 75%;
+								height: 0.3rem;
+								background-color: rgba(255, 255, 255, 0.5);
+								border-radius: 0.125rem;
+							"></div>
+					</div>
+
+					<div
+						class="tile tile-ratio box-shadow box-shadow-hover technologies"
+						style="
+							background-color: #4f9af0;
+							justify-content: space-evenly;
+							color: white;
+						">
+						<img src="images/lua.png" alt="Lua" />
+						<p class="fancy-button">Lua</p>
+						<div
+							style="
+								display: flex;
+								width: 75%;
+								height: 0.3rem;
+								background-color: rgba(255, 255, 255, 0.5);
+								border-radius: 0.125rem;
+							"></div>
+					</div>
+
+					<div
+						class="tile tile-ratio box-shadow box-shadow-hover technologies"
+						style="
+							background-color: #4f9af0;
+							justify-content: space-evenly;
+							color: white;
+						">
+						<i class="devicon-java-plain"></i>
+						<p class="fancy-button">Java</p>
+						<div
+							style="
+								display: flex;
+								width: 75%;
+								height: 0.3rem;
+								background-color: rgba(255, 255, 255, 0.5);
+								border-radius: 0.125rem;
+							"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="section">
+				<h2>Stuff I've Done</h2>
+				<div
 					style="
-						display: inherit;
-						width: 150px;
-						height: 150px;
-						border-radius: inherit;
-						position: absolute;
-						border: 2px solid rgb(192, 192, 192);
-					" />
-				<div style="background-color: rgba(255, 255, 255, 0)" class="icon-highlight">
-					<div class="noise-radial"></div>
-				</div>
-			</div>
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						width: 100%;
+						padding: 1rem;
+					">
+					<div class="tile box-shadow stuff-container">
+						<div class="postit bg-blue">
+							<h3>Tardis Refined</h3>
+							<div class="postit-content">
+								<p>
+									A Minecraft mod that adds a Tardis to the game. It's bigger on the
+									inside!
+								</p>
+								<a class="postit-image" href="https://modrinth.com/mod/tardis-refined">
+									<img src="images/tdis.png" alt="Tardis" />
 
-			<div style="display: flex; flex-direction: column; margin-left: 4rem; width: 95%">
-				<div class="name-text">
-					<p>Theo Baker</p>
-					<p>Programmer, Modeller</p>
-				</div>
-				<div class="socials">
-					<a
-						href="https://github.com/Magicmaan"
-						class="social-icon icon-link"
-						title="GitHub">
-						<i class="fab fa-github"></i>
-					</a>
-					<a
-						href="https://x.com/MagicMrmann"
-						class="social-icon icon-link"
-						title="Twitter">
-						<i class="fab fa-twitter"></i>
-					</a>
-					<a
-						href="mailto:theobaker99@gmail.com"
-						class="social-icon icon-link"
-						title="Email">
-						<i class="fa-solid fa-envelope"></i>
-					</a>
-				</div>
-			</div>
-		</div>
-		<div class="content-container" id="projects">
-			<div class="content-header-text">Projects</div>
-			<div class="projects">
-				<div class="project-item">
-					<img src="./images/placehold_project.png" alt="Project Image" />
-					<div class="project-content">
-						<div class="project-item-header">
-							<p>MCubed</p>
-							<div class="project-item-header-icons">
-								<a class="icon-link social-icon">
-									<i class="devicon-github-original" title="GitHub"></i>
-								</a>
-								<a class="icon-link social-icon" style="font-size: 1.25rem">
-									<i class="fa-solid fa-up-right-from-square" title="Link"></i>
+									<span><img src="images/download.png" /> 255k+</span>
 								</a>
 							</div>
 						</div>
 
-						<p class="project-description">
-							MCubed is a cube based modelling program, using React, threeJS, and
-							tailwind. Single developer project, contributing all code and all assets.
-						</p>
-					</div>
-				</div>
-				<div class="project-item">
-					<img src="./images/tardisrefined.png" alt="Project Image" />
-					<div class="project-content">
-						<div class="project-item-header">
-							<p>Tardis Refined</p>
-							<div class="project-item-header-icons">
-								<a
-									class="icon-link social-icon"
-									href="https://github.com/Whocraft/TardisRefined">
-									<i class="devicon-github-original" title="GitHub"></i>
-								</a>
-								<a
-									class="icon-link social-icon"
-									style="font-size: 1.25rem"
-									href="https://modrinth.com/mod/tardis-refined">
-									<i class="fa-solid fa-up-right-from-square" title="Link"></i>
-								</a>
-							</div>
+						<div class="postit" style="background-color: #26d643">
+							<h3>MCubed</h3>
+							<p>A cube based modelling program</p>
+							<img
+								src="images/tdis.png"
+								alt="Tardis"
+								style="
+									height: 75%;
+									position: absolute;
+									bottom: 10%;
+									right: 10%;
+									rotate: 30deg;
+									z-index: 0;
+									opacity: 0.25;
+								" />
 						</div>
 
-						<p class="project-description">
-							Tardis Refined is a Minecraft mod that adds the TARDIS from the BBC
-							Television show "DOCTOR WHO". Collaborative project with Whocraft (Main team
-							of 4). Contributing large majority of assets, and some code.
-						</p>
-					</div>
-				</div>
-				<div class="project-item">
-					<img src="./images/ptol.png" alt="Project Image" class="vignette" />
-					<div class="project-content">
-						<div class="project-item-header">
-							<p>Ptol</p>
-							<div class="project-item-header-icons">
-								<a class="icon-link social-icon">
-									<i class="devicon-github-original" title="GitHub"></i>
-								</a>
-								<a class="icon-link social-icon" style="font-size: 1.25rem">
-									<i class="fa-solid fa-up-right-from-square" title="Link"></i>
-								</a>
-							</div>
+						<div class="postit" style="background-color: #3e7da1">
+							<h3>Ptol</h3>
+							<p>A 2D game based on Portal</p>
+							<img
+								src="images/portalgun.png"
+								alt="Tardis"
+								style="
+									height: 50%;
+									position: absolute;
+									bottom: 20%;
+									right: 5%;
+									rotate: -60deg;
+									z-index: 0;
+									opacity: 0.25;
+								" />
 						</div>
 
-						<p class="project-description">
-							Ptol is a 2D game based on the Portal series from Valve Software, using the
-							TIC80 fantasy console, and lua. Single developer project, contributing all
-							code and all assets besides music, which was contributed by a friend.
-						</p>
-					</div>
-				</div>
-				<div class="project-item">
-					<img src="./images/placehold_project.png" alt="Project Image" />
-					<div class="project-content">
-						<div class="project-item-header">
-							<p>Smart Thermostat</p>
-							<div class="project-item-header-icons">
-								<a class="icon-link social-icon">
-									<i class="devicon-github-original" title="GitHub"></i>
-								</a>
-								<a class="icon-link social-icon" style="font-size: 1.25rem">
-									<i class="fa-solid fa-up-right-from-square" title="Link"></i>
-								</a>
-							</div>
+						<div class="postit">
+							<h3>Tardis Refined</h3>
+							<p>
+								A Minecraft mod that adds a Tardis to the game. It's bigger on the inside!
+							</p>
+							<img
+								src="images/tdis.png"
+								alt="Tardis"
+								style="
+									height: 75%;
+									position: absolute;
+									bottom: 10%;
+									right: 10%;
+									rotate: 30deg;
+									z-index: 0;
+									opacity: 0.25;
+								" />
 						</div>
-
-						<p class="project-description">
-							Smart Thermostat is a project that uses a raspberry pi and node-red to
-							control a thermostat, using python, node-red, and javascript. Collaborative
-							project in a team of 5, contributing to the backend and frontend.
-						</p>
-					</div>
-				</div>
-
-				<div class="project-item">
-					<img src="./images/placehold_project.png" alt="Project Image" />
-					<div class="project-content">
-						<div class="project-item-header">
-							<p>Aperture</p>
-							<div class="project-item-header-icons">
-								<a class="icon-link social-icon">
-									<i class="devicon-github-original" title="GitHub"></i>
-								</a>
-								<a class="icon-link social-icon" style="font-size: 1.25rem">
-									<i class="fa-solid fa-up-right-from-square" title="Link"></i>
-								</a>
-							</div>
-						</div>
-
-						<p class="project-description">
-							Aperture is a small educational content distribution platform, using HTML,
-							CSS, JavaScript, and PHP. Single developer project, contributing all code
-							and all assets.
-						</p>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="content-container" id="technologies">
-			<div class="content-header-text">Technologies</div>
-			<div class="technologies">
-				<div class="technology-item">
-					<i
-						class="devicon-cplusplus-plain technology-icon"
-						style="color: #0180cd"
-						title="C++"></i>
-					<img src="./styles/hexagon.svg" alt="Hexagon" class="hex" />
-				</div>
-
-				<div class="technology-item">
-					<i
-						class="devicon-java-plain technology-icon"
-						style="color: #ed2025; scale: 0.9; bottom: 10px; position: relative"
-						title="Java"></i>
-					<img src="./styles/hexagon.svg" alt="Hexagon" class="hex" />
-				</div>
-				<div class="technology-item">
-					<i
-						class="devicon-javascript-plain technology-icon"
-						style="color: #e08d2e; scale: 0.7"
-						title="JavaScript"></i>
-					<img src="./styles/hexagon.svg" alt="Hexagon" class="hex" />
-				</div>
-				<div class="technology-item">
-					<i
-						class="devicon-php-plain technology-icon"
-						style="color: #777bb3; scale: 0.9"
-						title="PHP"></i>
-					<img src="./styles/hexagon.svg" alt="Hexagon" class="hex" />
-				</div>
-				<div class="technology-item">
-					<i
-						class="devicon-python-plain technology-icon"
-						style="color: #326c9b; scale: 0.9"
-						title="Python"></i>
-					<img src="./styles/hexagon.svg" alt="Hexagon" class="hex" />
-				</div>
-				<div class="technology-item">
-					<i
-						class="devicon-react-original technology-icon"
-						style="color: #00d8ff; scale: 0.9"
-						title="React"></i>
-					<img src="./styles/hexagon.svg" alt="Hexagon" class="hex" />
-				</div>
-				<div class="technology-item">
-					<i
-						class="devicon-threejs-original technology-icon"
-						style="color: #00d8ff; scale: 0.9; left: 5px; position: relative"
-						title="THREEjs"></i>
-					<img src="./styles/hexagon.svg" alt="Hexagon" class="hex" />
-				</div>
-				<div class="technology-item">
-					<i
-						class="devicon-nodejs-plain-wordmark technology-icon"
-						style="color: #83cd29; scale: 0.8"
-						title="Node.js"></i>
-					<img src="./styles/hexagon.svg" alt="Hexagon" class="hex" />
-				</div>
-				<div class="technology-item">
-					<i
-						class="devicon-lua-plain technology-icon"
-						style="color: #4c4ce7; scale: 0.8"
-						title="Lua"></i>
-					<img src="./styles/hexagon.svg" alt="Hexagon" class="hex" />
-				</div>
-			</div>
+		<div class="footer">
+			<h2>Footer</h2>
 		</div>
-	</div>
 
-	<div class="background">
-		<div class="diagonal-stripe-group">
-			<div>
-				<div style="background-color: rgb(41, 176, 238)" class="diagonal-stripe">
-					<div class="noise"></div>
-				</div>
-			</div>
-			<div>
-				<div style="background-color: rgb(41, 238, 41)" class="diagonal-stripe">
-					<div class="noise"></div>
-				</div>
-			</div>
-			<div>
-				<div style="background-color: rgb(238, 41, 41)" class="diagonal-stripe">
-					<div class="noise"></div>
-				</div>
-			</div>
+		<div class="wrapper">
+			<div><span class="dot"></span></div>
+			<div><span class="dot"></span></div>
+			<div><span class="dot"></span></div>
+			<div><span class="dot"></span></div>
+			<div><span class="dot"></span></div>
+			<div><span class="dot"></span></div>
+			<div><span class="dot"></span></div>
+			<div><span class="dot"></span></div>
+			<div><span class="dot"></span></div>
+			<div><span class="dot"></span></div>
+			<div><span class="dot"></span></div>
+			<div><span class="dot"></span></div>
+			<div><span class="dot"></span></div>
+			<div><span class="dot"></span></div>
+			<div><span class="dot"></span></div>
 		</div>
-	</div>
-</body>
+	</body>
+	<script>
+		interval = 500;
+
+		elem = document.querySelector(".typewriter-text");
+		textList = ["Computer Science Student", "Software Developer", "3D Modeller"];
+		pos = 0;
+		text = textList[pos];
+		isTyping = true;
+		startedTyping = false;
+		startedBackspace = false;
+		typeAmount = 0;
+		i = 0;
+		console.log(elem.innerHTML);
+
+		function type() {
+			elem.innerHTML += text.charAt(i);
+			typeAmount++;
+			i++;
+		}
+		function backspace() {
+			elem.innerHTML = elem.innerHTML.slice(0, i);
+			typeAmount--;
+			i--;
+		}
+		firstRun = true;
+		typeWriter();
+
+		function lerp(start, end, t) {
+			return start * (1 - t) + end * t;
+		}
+
+		function typeWriter() {
+			if (elem.innerHTML === "") {
+				if (!firstRun) {
+					pos++;
+					if (pos >= textList.length) {
+						pos = 0;
+					}
+					text = textList[pos];
+				} else {
+					firstRun = false;
+				}
+				isTyping = true;
+				startedTyping = true;
+				typeAmount = 0;
+				// id = setInterval(typeWriter, interval);
+			} else if (elem.innerHTML === text) {
+				isTyping = false;
+				startedBackspace = true;
+				interval = 500;
+				typeAmount = 0;
+				// id = setInterval(typeWriter, interval);
+			}
+			if (isTyping) {
+				type();
+				if (startedTyping) {
+					if (interval > 50) {
+						interval =
+							lerp(interval, 50, (typeAmount / text.length) * 2) + Math.random() * 10;
+					} else {
+						startedTyping = false;
+					}
+				} else {
+					interval = 50;
+				}
+			} else {
+				backspace();
+				if (startedBackspace) {
+					if (interval > 50) {
+						interval =
+							150 +
+							lerp(50, interval, (typeAmount / text.length) * 3) +
+							Math.random() * 20;
+					} else {
+						interval = 50;
+						startedBackspace = false;
+					}
+				} else {
+					interval = 33;
+				}
+				console.log(interval);
+			}
+
+			setTimeout(typeWriter, interval);
+		}
+	</script>
+</html>

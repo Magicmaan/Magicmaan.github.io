@@ -1,0 +1,16 @@
+<!-- <svg height="100%" width="100%" viewBox="0 0 100 100">
+    <polygon points="50,15 90,85 10,85" style="fill:lime;stroke:purple;stroke-width:1" />
+</svg> -->
+
+
+<svg xmlns="http://www.w3.org/2000/svg" 
+    width="100%" 
+    height="100%" 
+    viewBox="0 0 100 100">
+
+    <path stroke="white"
+        stroke-width="5px" 
+        fill="none"
+        d="M37.009618943233 13.904501176718a15 15 0 0 1 25.980762113533 0l33.019237886467 57.190997646564a15 15 0 0 1 -12.990381056767 22.5l-66.038475772934 0a15 15 0 0 1 -12.990381056767 -22.5">
+    </path>
+</svg>
