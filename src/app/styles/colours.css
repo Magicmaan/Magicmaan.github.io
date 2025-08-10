@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+/* colour scheme */
+:root {
+  --background-dark: oklch(100% 0 0);
+  --background: hsl(0, 0%, 10%);
+  --background-light: oklch(86% 0 0);
+
+  --primary: oklch(37.45% 0.189 325.02);
+  --primary-content: oklch(87.49% 0.037 325.02);
+  --secondary: oklch(53.92% 0.162 241.36);
+  --secondary-content: oklch(90.784% 0.032 241.36);
+
+  --accent: oklch(75.98% 0.204 56.72);
+  --accent-content: oklch(15.196% 0.04 56.72);
+
+  --pixel-border: hsl(0, 0%, 65%);
+  /* --pixel-border-tint: hsl(32, 38%, 45%); */
+  --pixel-border-tint: brightness(0) saturate(100%) invert(61%) sepia(64%)
+    saturate(7%) hue-rotate(59deg) brightness(94%) contrast(98%);
+
+  --neutral: oklch(27.807% 0.029 256.847);
+  --neutral-content: oklch(85.561% 0.005 256.847);
+
+  --button-focus: hsl(209, 65%, 50%);
+
+  --text-light: oklch(100% 0 0);
+  --text: hsl(0, 0%, 85%);
+  --text-dark: hsl(0, 0%, 95%);
+  --text-bold: hsl(0, 0%, 10%);
+}
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-primary-content: var(--primary-content);
+  --color-secondary: var(--secondary);
+  --color-secondary-content: var(--secondary-content);
+  --color-accent: var(--accent);
+  --color-accent-content: var(--accent-content);
+  --color-neutral: var(--neutral);
+  --color-neutral-content: var(--neutral-content);
+  --color-button-focus: var(--button-focus);
+
+  --color-pixel-border: var(--pixel-border);
+
+  --color-background-dark: var(--background-dark);
+  --color-background: var(--background);
+  --color-background-light: var(--background-light);
+
+  --color-text-light: var(--text-light);
+  --color-text-dark: var(--text-dark);
+  --color-text-bold: var(--text-bold);
+
+  --font-Pixelon: "Pixelon", Helvetica, sans-serif;
+  --font-RasterForge: "RasterForge", "Pixelon", sans-serif;
+}
