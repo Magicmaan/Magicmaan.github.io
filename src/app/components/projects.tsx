@@ -191,6 +191,69 @@ function Projects() {
         {/* </div> */}
       </ProjectItem>
       <ProjectItem
+        title="PixelMorph"
+        description="A Machine Learning tool for generating pixel art. Allowing the texturing of an unknown image, based on a reference UV map. PixelMorph uses a custom-trained model to generate pixel art textures from images, making it easier to create and apply textures to animations in pixel art style."
+        image={
+          <span className="group pointer-events-auto z-10">
+            <img
+              src={"/images/pixelmorph-logo-512.webp"}
+              alt={"pixelmorph logo"}
+              className={
+                "object-cover w-full aspect-square group group-hover:hidden transition-all duration-250 "
+              }
+            />
+            <img
+              src={"/images/pixelmorph-logo-animated-512.webp"}
+              alt={"pixelmorph logo"}
+              className={
+                "object-cover w-full aspect-square hidden group group-hover:block "
+              }
+            />
+          </span>
+        }
+      >
+        <Link
+          link=""
+          disabled
+          svg={
+            <svg
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width={16}
+              height={16}
+              className="scale-150 text-text"
+            >
+              <path
+                d="M21 11V3h-8v2h4v2h-2v2h-2v2h-2v2H9v2h2v-2h2v-2h2V9h2V7h2v4h2zM11 5H3v16h16v-8h-2v6H5V7h6V5z"
+                fill="currentColor"
+              />
+            </svg>
+          }
+          text="Site"
+        />
+
+        <Link
+          link="https://github.com/Magicmaan/pixelmorph"
+          svg={
+            <svg
+              fill="currentColor"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width={16}
+              height={16}
+              className="scale-150 text-text"
+            >
+              <path
+                d="M8 5h2v2H8V5zM6 7h2v2H6V7zM4 9h2v2H4V9zm-2 2h2v2H2v-2zm2 2h2v2H4v-2zm2 2h2v2H6v-2zm2 2h2v2H8v-2zm8-12h-2v2h2V5zm2 2h-2v2h2V7zm2 2h-2v2h2V9zm2 2h-2v2h2v-2zm-2 2h-2v2h2v-2zm-2 2h-2v2h2v-2zm-2 2h-2v2h2v-2z"
+                fill="currentColor"
+              />
+            </svg>
+          }
+          text="Source"
+        />
+      </ProjectItem>
+      <ProjectItem
         title="MCubed"
         description="A cube-based modeling program designed for creating 3D models with ease and precision. MCubed allows users to build, edit, and export Minecraft-style models efficiently."
         image={
